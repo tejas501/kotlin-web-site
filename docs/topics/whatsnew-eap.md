@@ -7,18 +7,20 @@ _[Release date: %kotlinEapReleaseDate%](eap.md#build-details)_
 >
 {type="note"}
 
-The Kotlin 1.8.0-beta release is out! Here are some highlights from this release:
+The Kotlin 1.8.0-Beta release is out! Here are some highlights from this release:
 
-* [The old backend for Kotlin/JVM has been removed](#kotlin-jvm)
+* [We removed the old backend for Kotlin/JVM](#kotlin-jvm)
 * [We now support Xcode 14](#kotlin-native)
 * [We ensured compatibility with Gradle 7.3](#gradle)
 * [We introduced new experimental functions for JVM: recursively copy or delete directory content](#standard-library)
 
 ## Kotlin/JVM
+
 * Removed the old backend. (The `-Xuse-old-backend` compiler option is no longer supported).
 * Added support for Java 19 bytecode.
 
 ## Kotlin/Native
+
 * Added support for Xcode 14 and `watchosDeviceArm64` target.
 * Added support for new annotations to improve Objective-C and Swift interoperability:
     * `ObjCName`
@@ -27,17 +29,20 @@ The Kotlin 1.8.0-beta release is out! Here are some highlights from this release
 * Added improvements to the CocoaPods Gradle plugin so that registered Kotlin frameworks are now dynamically linked by default.
 
 ## Kotlin/JS
+
 * Stabilized the IR compiler and set incremental compilation to be used by default.
 * Deprecated the old backend.
 * Added additional reporting options for when `yarn.lock` is updated during the CI process.
 * Updated the Gradle plugin so that `kotlin.js.browser.karma.browsers` property can be used to set browser test targets.
 
 ## Kotlin Multiplatform
+
 * Added new Android source set layout that can be enabled in Gradle plugin with `kotlin.mpp.androidSourceSetLayoutVersion=2`.
 * Added new naming schema for `KotlinSourceSet` entities.
 * Changed the naming scheme of compilation configurations created by the Kotlin Multiplatform Gradle plugin.
 
 ## Gradle
+
 * Ensured compatibility with Gradle 7.3.
 * Added the option to disable daemon fallback by using `kotlin.daemon.useFallbackStrategy`.
 * Exposed available Kotlin compiler options as Gradle lazy properties.
@@ -45,9 +50,11 @@ The Kotlin 1.8.0-beta release is out! Here are some highlights from this release
 * Updated minimum supported Android Gradle plugin version to 4.1.3.
 
 ## Compiler
+
 Updated the Lombok compiler plugin so that it now supports the `@Builder` annotation.
 
 ## Standard library
+
 * Updated the JVM target to version 1.8.
 * Stabilized extension functions for `java.util.Optional`.
 * Stabilized functions:
@@ -59,9 +66,14 @@ Updated the Lombok compiler plugin so that it now supports the `@Builder` annota
 
 ## How to update to Kotlin 1.8.0-Beta
 
-The IDE support for Kotlin 1.8.0-Beta is available for IntelliJ IDEA TBD, Android Studio TBD.
+Kotlin plugins that support 1.8.0-Beta are available for:
 
-You can install Kotlin 1.8.0-Beta in any of the following ways:
+| IDE | Supported versions |
+|--|--| 
+| IntelliJ IDEA | 2021.3.x, 2022.1.x, 2022.2.x |
+| Android Studio | Dolphin, Electric Eel, Flamingo |
+
+You can install Kotlin 1.8.0-Beta in the following ways:
 
 * If you use the _Early Access Preview_ update channel, the IDE will suggest automatically updating to 1.8.0-Beta as soon as it becomes available.
 * If you use the _Stable_ update channel, you can change the channel to _Early Access Preview_ at any time by selecting **Tools** | **Kotlin** | **Configure Kotlin Plugin Updates** in your IDE. You'll then be able to install the latest preview release. Check out [these instructions](install-eap-plugin.md) for details.
