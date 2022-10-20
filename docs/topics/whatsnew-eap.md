@@ -14,6 +14,15 @@ The Kotlin 1.8.0-Beta release is out! Here are some highlights from this release
 * [We ensured compatibility with Gradle 7.3](#gradle)
 * [We introduced new experimental functions for JVM: recursively copy or delete directory content](#standard-library)
 
+## IDE support
+
+Kotlin plugins that support 1.8.0-Beta are available for:
+
+| IDE | Supported versions |
+|--|--|
+| IntelliJ IDEA | 2021.3.x, 2022.1.x, 2022.2.x |
+| Android Studio | Dolphin (213), Electric Eel (221), Flamingo (222) |
+
 ## Kotlin/JVM
 
 * Removed the old backend. (The `-Xuse-old-backend` compiler option is no longer supported).
@@ -65,13 +74,6 @@ Updated the Lombok compiler plugin so that it now supports the `@Builder` annota
 * Added new experimental functionality to `TimeMarks`, allowing `elapsedNow` to be read from multiple `TimeMarks` simultaneously.
 
 ## How to update to Kotlin 1.8.0-Beta
-
-Kotlin plugins that support 1.8.0-Beta are available for:
-
-| IDE | Supported versions |
-|--|--| 
-| IntelliJ IDEA | 2021.3.x, 2022.1.x, 2022.2.x |
-| Android Studio | Dolphin, Electric Eel, Flamingo |
 
 You can install Kotlin 1.8.0-Beta in the following ways:
 
